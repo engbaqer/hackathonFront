@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com", // fake test API
+  baseURL: import.meta.env.VITE_API_BASE_URL, // fake test API
 });
 
 // Response interceptor → error handler
