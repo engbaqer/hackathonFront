@@ -1,14 +1,9 @@
-import Header from "./components/header"
-import Body from "./components/body"
-import About from "./components/about"
+import { Button } from "@/components/ui/button";
+
 export default function App() {
   return (
-    <div >
-      <div className="flex flex-col min-h-screen">
-      <Header />
-    <Body />
+    <div className="flex flex-col min-h-screen bg-red-500">
+     <Button>Click Me</Button>
     </div>
-<About />
-    </div>
-  )
+  );
 }
